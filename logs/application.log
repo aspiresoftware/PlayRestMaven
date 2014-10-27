@@ -1,0 +1,15 @@
+2014-10-20 16:48:29,427 - [INFO] - from play in pool-4-thread-4 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2014-10-27 18:28:52,049 - [INFO] - from play in main 
+Application started (Prod)
+
+2014-10-27 18:28:52,270 - [INFO] - from play in main 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2014-10-27 18:30:36,910 - [DEBUG] - from application in play-akka.actor.default-dispatcher-2 
+Executing method : onHandlerNotFound()
+
+2014-10-27 18:30:37,027 - [DEBUG] - from application in play-akka.actor.default-dispatcher-3 
+Executing method : onHandlerNotFound()
+
