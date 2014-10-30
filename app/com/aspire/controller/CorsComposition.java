@@ -24,7 +24,7 @@ public class CorsComposition {
     @Target({ ElementType.TYPE, ElementType.METHOD })
     @Retention(RetentionPolicy.RUNTIME)
     public @interface Cors {
-        String value() default "http://192.168.1.13:9999";
+        String value() default "http://dev-finemsys-ui.elasticbeanstalk.com";
     }
 
     public static class CorsAction extends Action<Cors> {
