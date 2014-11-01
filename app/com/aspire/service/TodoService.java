@@ -9,7 +9,7 @@ import com.aspire.model.User;
 
 
 public class TodoService {
-
+    private static final long serialVersionUID = 1L;
     public static List<Todo> findByUser(User user) {
         Finder<Long, Todo> finder = new Finder<Long, Todo>(Long.class, Todo.class);
         return finder.where().eq("user", user).findList();

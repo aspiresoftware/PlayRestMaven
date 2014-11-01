@@ -19,6 +19,8 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
  */
 @CorsComposition.Cors
 public class SecurityController extends Controller {
+  
+    private static final long serialVersionUID = 1L;
 
     public final static String AUTH_TOKEN_HEADER = "X-AUTH-TOKEN";
     public static final String AUTH_TOKEN = "authToken";
@@ -44,6 +46,7 @@ public class SecurityController extends Controller {
       String[] authComp = auth.split(" ");
       String basic = new String(new sun.misc.BASE64Decoder().decodeBuffer(authComp[1]));
       String[] credentials = basic.split(":");
+      Logger.debug("credentials => " + credentials[0] + " : " + credentials[1]);
       User user = User.findByEmailAddressAndPassword(credentials[0], credentials[1]);
       
         if (user == null) {

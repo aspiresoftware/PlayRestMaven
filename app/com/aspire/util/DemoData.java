@@ -6,7 +6,7 @@ import com.aspire.model.Todo;
 import com.aspire.model.User;
 
 public class DemoData {
-
+    private static final long serialVersionUID = 1L;
     public static User user1;
     public static User user2;
 

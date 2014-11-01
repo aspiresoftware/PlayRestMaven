@@ -17,6 +17,8 @@ import play.mvc.With;
 
 public class CorsComposition {
 
+    private static final long serialVersionUID = 1L;
+    
     /**
      * Wraps the annotated action in an <code>CorsAction</code>.
      */

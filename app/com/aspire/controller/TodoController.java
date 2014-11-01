@@ -16,6 +16,8 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 @Security.Authenticated(Secured.class)
 public class TodoController extends Controller {
 
+    private static final long serialVersionUID = 1L;
+  
     public static Result getAllTodos() {
         Logger.debug("getAllTodos");
         List<com.aspire.model.Todo> todos = TodoService.findByUser(SecurityController.getUser());

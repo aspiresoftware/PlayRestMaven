@@ -15,6 +15,8 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 @CorsComposition.Cors
 public class Secured extends Security.Authenticator {
 
+    private static final long serialVersionUID = 1L;
+  
     @Override
     public String getUsername(Context ctx) {
         User user = null;

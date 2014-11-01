@@ -14,12 +14,14 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 
 public class Global extends GlobalSettings {
 
+    private static final long serialVersionUID = 1L;
+    
     @Override
     public void onStart(Application application) {
         // load the demo data in dev mode
-        if (Play.isDev() && (User.find.all().size() == 0)) {
-            DemoData.loadDemoData();
-        }
+//        if (Play.isDev() && (User.find.all().size() == 0)) {
+//            DemoData.loadDemoData();
+//        }
 
         super.onStart(application);
     }
